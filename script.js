@@ -19,3 +19,12 @@ function typeWriter(el) {
 }
 
 typeWriter(elementEl);
+
+const cardTitles = document.querySelectorAll('.card-title');
+
+cardTitles.forEach((title) => {
+  title.addEventListener('click', () => {
+    title.classList.add('hide');
+  });
+});
+
